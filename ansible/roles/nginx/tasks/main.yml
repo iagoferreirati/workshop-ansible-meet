@@ -1,0 +1,11 @@
+---
+#apt install nginx
+- name: Install nginx 
+  apt:
+    name: nginx
+    state: present
+
+- name: copiando arquivo do site
+  copy:
+    src: website
+    dest: /var/www/html

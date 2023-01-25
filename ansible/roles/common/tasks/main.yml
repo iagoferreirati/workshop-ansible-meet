@@ -1,0 +1,13 @@
+---
+- name: update cache
+  apt:
+    update_cache: yes  
+- name: Instalando pacotes
+  apt:
+    name:
+      - vim
+      - net-tools
+      - telnet
+      - curl
+      - nmap
+      - htop
